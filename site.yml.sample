@@ -9,7 +9,7 @@
         msg: "cephadm is the new official installer. Please, consider migrating.
               See https://docs.ceph.com/en/latest/cephadm/install for new deployments
               or https://docs.ceph.com/en/latest/cephadm/adoption for migrating existing deployments."
-      when: not yes_i_know | default(false) | bool
+      when: not yes_i_know | default(true) | bool
 
 - hosts:
   - mons
