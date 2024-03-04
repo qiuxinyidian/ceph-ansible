@@ -20,7 +20,7 @@
 
 - name: Enable crb repository
   community.general.dnf_config_manager:
-    name: crb
+    name: codeready-builder-for-rhel-9-x86_64-rpms
     state: enabled
   when:
     - ansible_facts['os_family'] == 'RedHat'
